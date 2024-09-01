@@ -56,7 +56,7 @@ public class OrderController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<Void> addProductToOrder(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteOrder(@PathVariable @Min(1) Long id) {
         orderService.deleteOrder(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
