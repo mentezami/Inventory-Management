@@ -53,9 +53,9 @@ Represents a customer order. Each order includes:
   - **Body**: JSON representation of the product
 
 - **Delete Product**
-  - **URL**: `/api/products/delete`
+  - **URL**: `/api/products/delete/{id}`
   - **Method**: DELETE
-  - **Body**: JSON representation of the product ID
+  - **URL Params**: `id=[long]` (Product ID)
 
 ### Order Endpoints
 
